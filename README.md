@@ -148,31 +148,6 @@ Recruitment_Task/
 
 ---
 
-## 🌐 Deployment to Vercel (Step-by-Step)
-
-This project includes a pre-configured `vercel.json` file to ensure that client-side routes (like `/events`, `/register`, and `/admin`) work seamlessly without 404 errors on direct browser refreshes.
-
-### Method 1: Deploy via Vercel Web Dashboard (Recommended)
-
-1. Go to [https://vercel.com](https://vercel.com) and log in with your GitHub account.
-2. Click **"Add New..."** $\rightarrow$ **"Project"**.
-3. Select your repository: `shivv2430/Recruitment_Task`.
-4. Keep the default settings:
-   - **Framework Preset**: `Vite`
-   - **Root Directory**: `./`
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-5. Click **"Deploy"**. Your website will be live with an SSL HTTPS link in under 1 minute!
-
-### Method 2: Deploy via Vercel CLI
-
-```bash
-npm install -g vercel
-vercel login
-vercel
-```
-
----
 
 ## 💡 5 Ideas to Scale This Project in the Future
 
@@ -192,7 +167,4 @@ vercel
 ## 🤝 Community & Support
 
 Have questions about the project or want to collaborate on college events?
-- **Club**: CodeChef ABESEC Student Chapter
-- **Campus**: ABES Engineering College, NH-24, Ghaziabad, UP (201009)
-- **Hub**: Lab 3, Ramanujan Block
 - **GitHub**: [@shivv2430](https://github.com/shivv2430)
