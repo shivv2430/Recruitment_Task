@@ -1,8 +1,6 @@
-// App.jsx - Main Application Shell & Route Definitions
-// We include the Navbar and Footer here so they stay visible across all pages.
-
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
 
 // Shared Layout Components
 import Navbar from "./components/Navbar";
@@ -20,8 +18,9 @@ import "./App.css";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <div className="app-layout">
+    <ThemeProvider>
+      <BrowserRouter>
+        <div className="app-layout">
         {/* Navigation Bar stays fixed/sticky at the top */}
         <Navbar />
 
@@ -47,5 +46,6 @@ export default function App() {
         <Footer />
       </div>
     </BrowserRouter>
+  </ThemeProvider>
   );
 }
